@@ -8,16 +8,23 @@
 </head>
 <body>
     <h1>お問い合わせ情報入力</h1>
- <form action="">
+    <!-- action:送信先のＵＲＬの指定-->
+    <!--method:GETorPOSTの指定-->
+ <form action="check.php" method="POST">
     <div> 
      <label for="name">名前</label><br>
-     <input id="name" type="text">
+     <input id="name" type="text"name="username">
     </div>
 
     <div>
       <label for="email">メールアドレス</label><br>
-      <input id="email" type="text">
+      <input id="email" type="text" name="email">
 
+    </div>
+    <div>
+        <label>お問い合わせ</label>
+        <textarea name="content"></textarea>    
+        
     </div>
 
     <input type="submit" value="送信">
